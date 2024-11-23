@@ -1,0 +1,364 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+.headhead a {
+    color: white;
+    }
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+  {box-sizing: border-box;}
+
+
+  .topnav .search-container {
+    float: right;
+  }
+
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+   .column {
+    float: left;
+  }
+
+  /* Left and right column */
+  .column.side {
+    width: 25%;
+  }
+
+  /* Middle column */
+  .column.middle {
+    width: 50%;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+
+.filterDiv {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  text-align: center;
+  padding: 10px;
+  width: 20%;
+  float: left;
+  display: none;
+}
+
+
+.filterDiv:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.show {
+  display: block;
+}
+
+.cards {
+  display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+    width: 100%;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+.tag-grass {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #7AC74C;
+  margin-top: 8px;
+}
+
+.tag-steel {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #B7B7CE;
+  margin-top: 8px;
+}
+
+.tag-ghost {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #735797;
+  margin-top: 8px;
+}
+
+.tag-rock {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #B6A136;
+  margin-top: 8px;
+}
+
+.tag-fire {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #EE8130;
+  margin-top: 8px;
+}
+
+.tag-poison {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #A33EA1;
+  margin-top: 8px;
+}
+
+.tag-water {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #6390F0;
+  margin-top: 8px;
+}
+
+.tag-normal {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #A8A77A;
+  margin-top: 8px;
+}
+
+.tag-electric {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #F7D02C;
+  margin-top: 8px;
+}
+
+.tag-fairy {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #D685AD;
+  margin-top: 8px;
+}
+
+.tag-dark {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #705746;
+  margin-top: 8px;
+}
+
+.tag-bug {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #A6B91A;
+  margin-top: 8px;
+}
+
+.tag-ground {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #E2BF65;
+  margin-top: 8px;
+}
+
+.tag-psychic {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #F95587;
+  margin-top: 8px;
+}
+
+.tag-dragon {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #6F35FC;
+  margin-top: 8px;
+}
+
+.tag-ice {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #96D9D6;
+  margin-top: 8px;
+}
+
+.tag-fighting {
+  display: inline-block;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #C22E28;
+  margin-top: 8px;
+}
+
+.tag-flying {
+  display: inline-block;
+  color: black;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #A98FF3;
+  margin-top: 8px;
+  }
+  
+a:link { text-decoration: none; color:grey; }
+a:visited { text-decoration: none; color:grey; }
+a:hover { text-decoration: none; color:grey; }
+a:focus { text-decoration: none; color:grey; }
+a:hover, a:active { text-decoration: none; color:grey }
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
