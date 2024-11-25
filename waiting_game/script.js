@@ -230,8 +230,3 @@ function restartGame() {
   location.reload();
   showAchievementsButton();
 }
-
-// Ensure Achievements Button is Visible on Page Load
-document.addEventListener("DOMContentLoaded", () => {
-  achievementsButton.style.display = "block";
-});
