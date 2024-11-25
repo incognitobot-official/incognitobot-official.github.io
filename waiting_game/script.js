@@ -185,17 +185,13 @@ function toggleHardMode() {
   }
 }
 
-// Restart the game
-function restartGame() {
-  location.reload(); // Reload the page to restart the game
-}
-
 // Start the game when the begin button is clicked
 beginButton.addEventListener("click", () => {
   // Remove the main menu elements
   container.style.display = "none";
   gameArea.style.display = "block";
   timerDiv.style.display = "block";
+  hideAchievementsButton;
 
   startTimer();
   gameArea.appendChild(createRedButton());
@@ -204,3 +200,38 @@ beginButton.addEventListener("click", () => {
 
 // Toggle hard mode when the toggle button is clicked
 hardModeToggle.addEventListener("click", toggleHardMode);
+
+const achievementsButton = document.getElementById("achievementsButton");
+const achievementsContainer = document.getElementById("achievementsContainer");
+const backButton = document.getElementById("backButton");
+
+achievementsButton.addEventListener("click", () => {
+  achievementsContainer.style.display = "block"; // Show achievements
+  achievementsContainer.classList.remove("hidden");
+  container.style.display = "none"; // Hide main menu
+  gameArea.style.display = "none"; // Hide game area
+  timerDiv.style.display = "none"; // Hide timer
+});
+
+backButton.addEventListener("click", restartGame);
+
+// Hide the Achievements Button During the Game
+function hideAchievementsButton() {
+  achievementsButton.style.display = "none";
+}
+
+// Show the Achievements Button After Reset
+function showAchievementsButton() {
+  achievementsButton.style.display = "block";
+}
+
+// Show Achievements Button on Restart
+function restartGame() {
+  location.reload(); // Reload the page to restart the game
+  showAchievementsButton();
+}
+
+// Ensure Achievements Button is Visible on Page Load
+document.addEventListener("DOMContentLoaded", () => {
+  achievementsButton.style.display = "block";
+});
