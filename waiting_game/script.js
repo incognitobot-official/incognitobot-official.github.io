@@ -206,11 +206,11 @@ const achievementsContainer = document.getElementById("achievementsContainer");
 const backButton = document.getElementById("backButton");
 
 achievementsButton.addEventListener("click", () => {
-  achievementsContainer.style.display = "block"; // Show achievements
+  achievementsContainer.style.display = "block";
   achievementsContainer.classList.remove("hidden");
-  container.style.display = "none"; // Hide main menu
-  gameArea.style.display = "none"; // Hide game area
-  timerDiv.style.display = "none"; // Hide timer
+  container.style.display = "none";
+  gameArea.style.display = "none";
+  timerDiv.style.display = "none";
 });
 
 backButton.addEventListener("click", restartGame);
@@ -227,7 +227,7 @@ function showAchievementsButton() {
 
 // Show Achievements Button on Restart
 function restartGame() {
-  location.reload(); // Reload the page to restart the game
+  location.reload();
   showAchievementsButton();
 }
 
