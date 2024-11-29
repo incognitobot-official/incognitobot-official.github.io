@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convoys</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="../../index.html" id="return-home-btn" class="">Home</a>
+
+    <div id="main-menu">
+        <h1 class="pixel-font">Convoys</h1>
+        <p class="description">Recruit other pirate ships and expand your high seas navy!<br><br>Lead your convoy through uncharted waters.<br><br>How far can you go until you crash?</p>
+        <button id="play-button">Play</button>
+        <div id="options">
+            <h2 class="pixel-font">Game Options (TBA)</h2>
+            <button class="option" data-rounds="1">1 Ship</button>
+            <button class="option" data-rounds="1">3 Ships</button>
+            <button class="option" data-rounds="1">5 Ships</button>
+        </div>
+    </div>
+    <div id="game-screen" class="hidden">
+        <div id="score" class="pixel-font">1</div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <div id="end-screen" class="hidden">
+        <h1 class="pixel-font" id="end-message"></h1>
+        <button id="restart-button">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

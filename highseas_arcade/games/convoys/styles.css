@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Pixel";
+    src: url("../../press-start-2p.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('assets/sea.png');
+    background-size: cover;
+    background-position: center;
+    font-family: "Pixel", sans-serif;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.pixel-font {
+    font-family: "Pixel", sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+#main-menu,
+#end-screen {
+    text-align: center;
+}
+
+button {
+    background-color: #8b7f13;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 5px;
+    font-family: "Pixel", sans-serif;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a08d2d;
+}
+
+#game-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    z-index: 10;
+}
+
+.description {
+    font-family: 'Pixel', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(45deg, #ee6bff, #f7c8b0, #48c959, #f7c8b0);
+    background-size: 400% 400%; 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    animation: gradientAnimation 4s ease infinite; 
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Style for the Return to Home Button in Top Left Corner */
+#return-home-btn {
+    font-family: 'Pixel', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 24px;
+    background-color: #ff6b6b;  
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    position: absolute;  
+    top: 10px;  
+    left: 10px;  
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#return-home-btn:hover {
+    background-color: #f7c8b0;  
+    transform: scale(1.1);  
+}
+
+#return-home-btn:active {
+    background-color: #ff6b6b;  
+    transform: scale(0.95);  
+}
+
